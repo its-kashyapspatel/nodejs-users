@@ -8,7 +8,7 @@ const cors = require('cors')
 const app = express();
 const port = process.env.PORT;
 
-app.use(cors({ origin: 'http://localhost:4200' }))
+app.use(cors({ origin: process.env.FRONT_END }))
 app.use(bodyParser.json());
 app.use('/', userRoutes);
 
