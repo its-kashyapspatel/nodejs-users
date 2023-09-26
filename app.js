@@ -8,7 +8,7 @@ const cors = require('cors')
 const app = express();
 const port = process.env.PORT;
 
-app.use(cors({ origin: 'https://patelkashyap-angular-users.vercel.app/' }))
+app.use(cors({ origin: 'https://patelkashyap-angular-users.vercel.app' }))
 app.use(bodyParser.json());
 app.use('/', userRoutes);
 
